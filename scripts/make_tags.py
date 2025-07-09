@@ -8,14 +8,12 @@ from slugify import slugify
 from github import Github
 
 TOKEN = os.getenv("GH_TOKEN")         # set in workflow secrets
-gh   = Github(os.getenv("GH_TOKEN"), per_page=100)
-USER  = gh.get_user()          # GitHub username
 
 if not TOKEN or not USER:
     sys.exit("Missing GH_TOKEN or GH_USER env vars")
 
 gh   = Github(TOKEN, per_page=100)
-user = gh.get_user(USER)
+user = gh.get_user()
 
 rows = []
 for repo in user.get_starred():
