@@ -14,17 +14,22 @@ user = gh.get_user()
 
 rows = []
 for repo in user.get_starred():
-    topics = repo.get_topics()              # list[str]
-    lang   = repo.language or ""
-    owner  = repo.owner.login
+    try:
+        topics = repo.get_topics()         # may raise 403 on some orgs
+    except GithubException as exc:
+        if exc.status == 403:
+            print(f"Skip {repo.full_name}: 403 from org policy")
+            topics = []                    # fall back to language + owner tag
+        else:
+            raise
 
-    # tiny taxonomy rule‑set
-    tags   = {slugify(t) for t in topics}
-    if lang:  tags.add(slugify(lang))
-    tags.add(slugify(owner))
+    tags = {slugify(t) for t in topics}
+    if repo.language:
+        tags.add(slugify(repo.language))
+    tags.add(slugify(repo.owner.login))
 
     rows.append((repo.full_name, ", ".join(sorted(tags))))
-    time.sleep(0.1)                         # stay polite (<90 req/min)
+    time.sleep(0.1)
 
 # write markdown table
 out = pathlib.Path("starred_repos_tags.md")
