@@ -5,12 +5,16 @@ repo_full_name | tag1, tag2, ...
 """
 import os, sys, pathlib, json, time
 from slugify import slugify
-from github import Github
+from github import Github, GithubException
 
-TOKEN = os.getenv("GH_TOKEN")         # set in workflow secrets
+TOKEN = os.getenv("GH_TOKEN")         # optional GitHub token
+USER  = os.getenv("GH_USER")          # username for unauth'd requests
 
-gh   = Github(TOKEN, per_page=100)
-user = gh.get_user()
+if not (TOKEN or USER):
+    sys.exit("Set GH_USER or GH_TOKEN to identify account")
+
+gh = Github(TOKEN or None, per_page=100)
+user = gh.get_user(USER) if USER else gh.get_user()
 
 rows = []
 for repo in user.get_starred():
