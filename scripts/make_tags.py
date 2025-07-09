@@ -8,6 +8,7 @@ from slugify import slugify
 from github import Github
 
 TOKEN = os.getenv("GH_TOKEN")         # set in workflow secrets
+gh   = Github(os.getenv("GH_TOKEN"), per_page=100)
 USER  = gh.get_user()          # GitHub username
 
 if not TOKEN or not USER:
