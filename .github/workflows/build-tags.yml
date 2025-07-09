@@ -23,7 +23,7 @@ jobs:
 
     - name: Build tag table
       env:
-        GH_TOKEN: ${{ secrets.GH_PAT }}   # create a PAT with "public_repo"
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GH_USER:  ${{ github.repository_owner }}
       run: |
         python scripts/make_tags.py
