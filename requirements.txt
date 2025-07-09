@@ -1,0 +1,2 @@
+PyGithub==2.2.0
+python-slugify==8.0.1
