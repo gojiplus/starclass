@@ -6,6 +6,7 @@ repo_full_name | tag1, tag2, ...
 import os, sys, pathlib, json, time
 from slugify import slugify
 from github import Github
+from github.GithubException import GithubException
 
 TOKEN = os.getenv("GH_TOKEN")         # set in workflow secrets
 
