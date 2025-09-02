@@ -9,10 +9,10 @@ inputs:
   username:
     description: 'GitHub username (optional, defaults to token owner)'
     required: false
-  output-format:
-    description: 'Output format: json, markdown, or both'
+  cluster-mode:
+    description: 'Clustering mode: auto, full, or assign'
     required: false
-    default: 'both'
+    default: 'auto'
 
 outputs:
   clusters-json:
@@ -24,6 +24,12 @@ outputs:
   data-json:
     description: 'Path to raw repository data JSON file'
     value: 'starred_repos_data.json'
+  changes-json:
+    description: 'Path to repository changes tracking file'
+    value: 'starred_repos_changes.json'
+  repos-list-json:
+    description: 'Path to starred repositories list file'
+    value: 'starred_repos_list.json'
 
 runs:
   using: 'composite'
@@ -39,6 +45,13 @@ runs:
         python -m pip install --upgrade pip
         pip install -r ${{ github.action_path }}/scripts/requirements.txt
         
+    - name: Fetch starred repositories
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        GH_USER: ${{ inputs.username }}
+      run: python ${{ github.action_path }}/scripts/fetch_starred.py
+        
     - name: Collect repository data
       shell: bash
       env:
@@ -48,6 +61,8 @@ runs:
       
     - name: Generate clusters
       shell: bash
+      env:
+        CLUSTER_MODE: ${{ inputs.cluster-mode }}
       run: python ${{ github.action_path }}/scripts/cluster_repos.py
 
 branding:

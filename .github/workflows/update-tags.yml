@@ -15,11 +15,12 @@ jobs:
       uses: ./
       with:
         github-token: ${{ secrets.GH_PAT }}
+        cluster-mode: 'auto'
         
     - name: Commit and push results
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add starred_repos_data.json starred_repos_clusters.json starred_repos_clusters.md
+        git add starred_repos_list.json starred_repos_changes.json starred_repos_data.json starred_repos_clusters.json starred_repos_clusters.md clustering_model.joblib
         git diff --staged --quiet || git commit -m "Update starred repos clusters"
         git push
