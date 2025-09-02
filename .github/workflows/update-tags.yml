@@ -24,7 +24,7 @@ jobs:
     - name: Run script
       env:
         GH_TOKEN: ${{ secrets.GH_PAT }}
-        GH_USER: ${{ secrets.GH_USER }}
+        GH_USER: ${{ github.repository_owner }}
       run: python scripts/make_tags.py
       
     - name: Commit and push changes
