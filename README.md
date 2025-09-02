@@ -11,12 +11,22 @@ Automatically cluster your starred GitHub repositories using semantic similarity
 
 ## Usage
 
-### GitHub Action (Recommended)
-This tool is designed to run as a GitHub Action. Fork this repository and:
+### GitHub Action
+Add this action to your workflow:
+
+```yaml
+- name: Cluster starred repositories
+  uses: gojiplus/starclass@main
+  with:
+    github-token: ${{ secrets.GITHUB_TOKEN }}
+```
+
+### Self-hosted Demo
+This repository includes a demo workflow. Fork it and:
 
 1. Set repository secrets:
-   - `GH_PAT`: Personal access token with `user` scope
-2. Go to Actions tab → "Update Starred Repos Tags" → "Run workflow"
+   - `GH_PAT`: Personal access token with `user` scope  
+2. Go to Actions tab → "Demo StarClass Action" → "Run workflow"
 
 ### Local Usage
 ```bash

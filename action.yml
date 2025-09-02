@@ -1,0 +1,55 @@
+name: 'StarClass'
+description: 'Automatically cluster your starred GitHub repositories using semantic similarity'
+author: 'gojiplus'
+
+inputs:
+  github-token:
+    description: 'GitHub token with user scope to access starred repositories'
+    required: true
+  username:
+    description: 'GitHub username (optional, defaults to token owner)'
+    required: false
+  output-format:
+    description: 'Output format: json, markdown, or both'
+    required: false
+    default: 'both'
+
+outputs:
+  clusters-json:
+    description: 'Path to generated clusters JSON file'
+    value: 'starred_repos_clusters.json'
+  clusters-markdown:
+    description: 'Path to generated clusters Markdown file'
+    value: 'starred_repos_clusters.md'
+  data-json:
+    description: 'Path to raw repository data JSON file'
+    value: 'starred_repos_data.json'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r ${{ github.action_path }}/scripts/requirements.txt
+        
+    - name: Collect repository data
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+        GH_USER: ${{ inputs.username }}
+      run: python ${{ github.action_path }}/scripts/collect_data.py
+      
+    - name: Generate clusters
+      shell: bash
+      run: python ${{ github.action_path }}/scripts/cluster_repos.py
+
+branding:
+  icon: 'star'
+  color: 'blue'
