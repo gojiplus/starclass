@@ -21,16 +21,19 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r scripts/requirements.txt
         
-    - name: Run script
+    - name: Collect repository data
       env:
         GH_TOKEN: ${{ secrets.GH_PAT }}
         GH_USER: ${{ github.repository_owner }}
-      run: python scripts/make_tags.py
+      run: python scripts/collect_data.py
+      
+    - name: Generate clusters
+      run: python scripts/cluster_repos.py
       
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add starred_repos_tags.md starred_repos_clusters.json
-        git diff --staged --quiet || git commit -m "Update starred repos tags and clusters"
+        git add starred_repos_data.json starred_repos_clusters.json starred_repos_clusters.md
+        git diff --staged --quiet || git commit -m "Update starred repos data and clusters"
         git push
