@@ -23,7 +23,7 @@ jobs:
         
     - name: Run script
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_PAT }}
         GH_USER: ${{ secrets.GH_USER }}
       run: python scripts/make_tags.py
       
