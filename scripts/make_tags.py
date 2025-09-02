@@ -14,7 +14,7 @@ if not (TOKEN or USER):
     sys.exit("Set GH_USER or GH_TOKEN to identify account")
 
 gh = Github(TOKEN or None, per_page=100)
-user = gh.get_user(USER) if USER else gh.get_user()
+user = gh.get_user(USER)
 
 rows = []
 for repo in user.get_starred():
