@@ -1304,7 +1304,7 @@
 | INFO-474/m7-d3-intro | html, info-474 |
 | jellyfangs/messenger-bot-tutorial | javascript, jellyfangs |
 | halpo/parser | c, halpo |
-| outside-edge/toss-up | outside-edge, tex |
+| outside-edge/toss_up | outside-edge, tex |
 | minimaxir/movie-gender | jupyter-notebook, minimaxir |
 | tensorflow/playground | tensorflow, typescript |
 | notnews/politifact | notnews, politifact, politifact-rating, r |
@@ -1886,7 +1886,7 @@
 | cpsievert/LDAvis | cpsievert, javascript, r, text-mining, topic-modeling, visualization |
 | tiimgreen/github-cheat-sheet | awesome, awesome-list, git, github, list, tiimgreen |
 | r-dbi/RSQLite | database, r, r-dbi, sqlite3 |
-| outside-edge/get-cricket-data | cricket-data, espncricinfo, outside-edge, python |
+| outside-edge/get_cricket_data | cricket-data, espncricinfo, outside-edge, python |
 | soodoku/military-experience | military-experience, r, soodoku, uk-prime-ministers, us-presidents, veterans |
 | geosensing/latlong-to-zip | geosensing, python |
 | appeler/clean-names | appeler, python |

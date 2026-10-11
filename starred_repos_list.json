@@ -9022,8 +9022,8 @@
     "language": "C",
     "description": "R parser package"
   },
-  "outside-edge/toss-up": {
-    "full_name": "outside-edge/toss-up",
+  "outside-edge/toss_up": {
+    "full_name": "outside-edge/toss_up",
     "updated_at": "2024-04-28T12:59:40+00:00",
     "starred_at": "2025-09-02T09:38:43.056101",
     "language": "TeX",
