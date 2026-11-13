@@ -229,7 +229,7 @@
 | BishrGhalil/stitchtoon | bishrghalil, python |
 | ftherrien/VaspGibbs | abinitio-simulations, ftherrien, gibbs-energy, python, thermodynamics, vasp |
 | TigreGotico/jurebes | python, tigregotico |
-| timelessnesses/typed_env | enviroment, environment-variables, python, python3, timelessnesses, typing |
+| timelessnesses/typed_env | environment, environment-variables, python, python3, timelessnesses, typing |
 | rlaphoenix/ChapSnap | chapters, matroska, python, rlaphoenix, scene-detection, video |
 | entelecheia/super-duper-waddle | entelecheia, makefile |
 | Mauricio8583/Pacotes_processamento_python | mauricio8583, python |
@@ -393,7 +393,7 @@
 | DillonHammill/DataEditR | dillonhammill, r |
 | wenliangdai/Multimodal-End2end-Sparse | python, wenliangdai |
 | espnet/espnet | chainer, deep-learning, end-to-end, espnet, kaldi, machine-translation, python, pytorch, singing-voice-synthesis, speaker-diarization, speech-enhancement, speech-recognition, speech-separation, speech-synthesis, speech-translation, spoken-language-understanding, text-to-speech, voice-conversion |
-| e-hulten/july | calendar, calendar-heatmap, calendar-plot, daily-data, e-hulten, github-plot, heatmap, heatmap-visualization, matplotlib, python, visualisation |
+| e-hulten/july | calendar, calendar-heatmap, calendar-plot, daily-data, e-hulten, github-plot, heatmap, heatmap-visualization, matplotlib, python, visualization |
 | notnews/msnbc_transcripts | cable-news, jupyter-notebook, msnbc, news, notnews, transcripts |
 | zcgzcgzcg1/MediaSum | zcgzcgzcg1 |
 | janfreyberg/superintendent | janfreyberg, python |
@@ -549,7 +549,7 @@
 | amzn/metalearn-leap | amzn, python |
 | gadenbuie/countdown | countdown-timer, gadenbuie, html, javascript, quarto-extension, quarto-slides, rmarkdown, rstats, slides, xaringan |
 | CitationGecko/citation-network-explorer | citationgecko, javascript |
-| JosepER/Book_How_to_weight_a_survey | calibration, data-analysis, html, joseper, sampling, social-sciences, survey, weighting, weigths |
+| JosepER/Book_How_to_weight_a_survey | calibration, data-analysis, html, joseper, sampling, social-sciences, survey, weighting, weights |
 | CorrelAid/newsanchor | correlaid, r |
 | r-devel/rcheckserver | dockerfile, r-devel |
 | facebook/Ax | facebook, python |
@@ -609,7 +609,7 @@
 | drivendataorg/cookiecutter-data-science | ai, cookiecutter, cookiecutter-data-science, cookiecutter-template, data-science, drivendataorg, machine-learning, python |
 | srkobakian/taipan | r, srkobakian |
 | andrewheiss/diff-means-half-dozen-ways | andrewheiss, brms, inference, r, stan |
-| all-contributors/all-contributors | acknowledgements, all-contributors, contributors, html, open-source-tooling, opensource, opensource-management, recognition |
+| all-contributors/all-contributors | acknowledgments, all-contributors, contributors, html, open-source-tooling, opensource, opensource-management, recognition |
 | notnews/uk_not_news | british-news-media, jupyter-notebook, machine-learning, news, nlp, notnews |
 | facebookresearch/many-to-many-dijkstra | facebookresearch, python |
 | in-rolls/google_vision_ocr | in-rolls, jupyter-notebook |
@@ -647,7 +647,7 @@
 | google-research/bert | google, google-research, natural-language-processing, natural-language-understanding, nlp, python, tensorflow |
 | github-education-resources/classroom | classroom, education, github, github-education-resources, oauth, rails, ruby |
 | ropensci/handlr | bibtex, citations, citeproc, crosscite, digital-object-identifier, doi, metadata, r, r-package, ris, ropensci, rstats |
-| protocolbuffers/protobuf | c, marshalling, protobuf, protobuf-runtime, protoc, protocol-buffers, protocol-compiler, protocolbuffers, rpc, serialization |
+| protocolbuffers/protobuf | c, marshaling, protobuf, protobuf-runtime, protoc, protocol-buffers, protocol-compiler, protocolbuffers, rpc, serialization |
 | tensorflow/adanet | automl, deep-learning, distributed-training, ensemble, gpu, jupyter-notebook, learning-theory, machine-learning, neural-architecture-search, python, tensorflow, tpu |
 | jonschlinkert/markdown-toc | javascript, jonschlinkert, markdown, markdown-toc, md, navigation, node, nodejs, project, readme, remarkable, table-of-contents, toc, toc-generator |
 | client9/ipcat | client9, go |
@@ -665,7 +665,7 @@
 | hrbrmstr/indialights | dmsp, hrbrmstr, indialights, r, rstats, sodd |
 | amirziai/flatten | amirziai, flattened-objects, flattens, json, pandas, python, unflatten |
 | datacamp/funneljoin | datacamp, r |
-| graphql-editor/graphql-editor | graphql, graphql-editor, ide, playground, tool, tools, typescript, visualisation |
+| graphql-editor/graphql-editor | graphql, graphql-editor, ide, playground, tool, tools, typescript, visualization |
 | nteract/papermill | julia, jupyter, notebook, notebook-generator, notebooks, nteract, pipeline, publishing, python, r, scala |
 | citation-style-language/styles | bibliography, citation-style-language, citation-styles, citations, csl, hacktoberfest, ruby |
 | mwouts/jupytext | hydrogen, jupyter-notebook, jupyterlab, jupyterlab-extension, knitr, markdown, mwouts, notebooks, python, rmarkdown, rstudio, version-control |
@@ -987,7 +987,7 @@
 | dbamman/book-segmentation | dbamman, python |
 | filterbubbler/filterbubbler-web-ext | filterbubbler, javascript |
 | r-prof/jointprof | c, r-prof |
-| janishar/mit-deep-learning-book-pdf | book, chapter, clear, deep-learning, deeplearning, excercises, good, janishar, java, learning, lecture-notes, linear-algebra, machine, machine-learning, mit, neural-network, neural-networks, pdf, print, printable, thinking |
+| janishar/mit-deep-learning-book-pdf | book, chapter, clear, deep-learning, deeplearning, exercises, good, janishar, java, learning, lecture-notes, linear-algebra, machine, machine-learning, mit, neural-network, neural-networks, pdf, print, printable, thinking |
 | open-retractions/open-retractions | open-data, open-datasets, open-retractions, publishing, retractions, science |
 | rasbt/deep-learning-book | artificial-intelligence, data-science, deep-learning, jupyter-notebook, machine-learning, neural-network, python, pytorch, rasbt, tensorflow |
 | gojiplus/captr | captricity, captricity-api, cran, gojiplus, ocr, r |
@@ -1117,7 +1117,7 @@
 | ropensci-archive/rbace | api-wrapper, r, r-package, ropensci-archive, rstats, scholarly-metadata |
 | donnemartin/data-science-ipython-notebooks | aws, big-data, caffe, data-science, deep-learning, donnemartin, hadoop, kaggle, keras, machine-learning, mapreduce, matplotlib, numpy, pandas, python, scikit-learn, scipy, spark, tensorflow, theano |
 | Developer-Y/cs-video-courses | algorithms, bioinformatics, computational-biology, computational-physics, computer-architecture, computer-science, computer-vision, database-systems, databases, deep-learning, developer-y, embedded-systems, machine-learning, quantum-computing, reinforcement-learning, robotics, security, systems, web-development |
-| tidyverse/modelr | modelling, r, tidyverse |
+| tidyverse/modelr | modeling, r, tidyverse |
 | yahoo/CaffeOnSpark | jupyter-notebook, yahoo |
 | PedramNavid/trump_speeches | pedramnavid, python |
 | sckott/fauxpas | error-handling, http, r, r-package, rstats, sckott |
@@ -1552,7 +1552,7 @@
 | robertjwilson/ggplot2-theme | r, robertjwilson |
 | rcc-uchicago/influenceR | c, rcc-uchicago |
 | CSX460/CSX460 | csx460, html |
-| bokeh/bokeh | bokeh, data-visualisation, interactive-plots, javascript, jupyter, notebooks, numfocus, plots, plotting, python, typescript, visualisation, visualization |
+| bokeh/bokeh | bokeh, data-visualisation, interactive-plots, javascript, jupyter, notebooks, numfocus, plots, plotting, python, typescript, visualization, visualization |
 | gojiplus/abbyyR | abbyy-cloud-ocr, cran, gojiplus, html, ocr, ocr-engine |
 | minimaxir/reddit-bigquery | minimaxir, r |
 | bart6114/jug | bart6114, r |
@@ -1847,7 +1847,7 @@
 | SMAPPNYU/smapp-toolkit | python, smappnyu |
 | wilkelab/cowplot | r, wilkelab |
 | abbyy/ocrsdk.com | abbyy, java |
-| rturn/parseTweetFiles | r, rturn |
+| return/parseTweetFiles | r, return |
 | bbolker/cricketr | bbolker, r |
 | christophergandrud/Rep-Res-Book | christophergandrud, tex |
 | christophergandrud/networkD3 | christophergandrud, d3js, networks, r, rstats |
