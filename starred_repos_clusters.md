@@ -1391,7 +1391,7 @@
 - rstudio/sparkapi
 - rstudio/webinars
 - rtrangucci/mrp_2016_election
-- rturn/parseTweetFiles
+- return/parseTweetFiles
 - rungalileo/bulk-labeling
 - rwaldron/johnny-five
 - ryanflorence/react-training
